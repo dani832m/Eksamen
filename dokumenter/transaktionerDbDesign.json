@@ -1,0 +1,10 @@
+{
+    "transaktioner": [
+        {
+            "transId": 2131,
+            "fraKonto": 12345678,
+            "tilKonto": 87654321,
+            "gebyr": 30
+        }
+    ]
+}

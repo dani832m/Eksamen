@@ -1,0 +1,25 @@
+For at anvende min data i din egen database, eller oprette en database
+magen til den, jeg har arbejdet ud fra, skal du gøre følgende: 
+
+1. Opret en database ved navn "CryptoBank". 
+2. Opret to collections - én ved navn "Konti", én ved navn "Transaktioner". 
+3. Indsæt følgende document (objekt) i collectionen Konti: 
+    {
+        "Uid": 1,
+        "kodeord": "123",
+        "cpr": 22111992,
+        "fornavn": "Ole",
+        "efternavn": "Olsen",
+        "adresse": "Parkvej 1, 4700 Næstved",
+        "kontonummer": 12345678,
+        "kundeId": 1821,
+        "valuta": "Bitcoin",
+        "saldo": 100
+    } 
+4. Indsæt følgende document (objekt) i collectionen Transaktioner: 
+    {
+        "transId": 2131,
+        "fraKonto": 12345678,
+        "tilKonto": 87654321,
+        "gebyr": 30
+    }

@@ -1,0 +1,16 @@
+Teknologispørgsmål 1: 
+
+Da de to servere allerede er forbundet via LAN, ser jeg ingen grund til at vi skal helt op
+i toppen af OSI-laget, applikationslaget. Altså er der ingen grund til at oprette en dedikeret
+HTTP-forbindelse mellem de to servere. 
+
+Jeg påtænker i stedet at oprette en socket-forbindelse, der blot kommunikerer mellem to værter,
+og derfor bevæger vi os på det femte lag i OSI-modellen, nemlig sessionslaget. 
+
+Ønsker man dataen krypteret, kunne det være en god idé at hoppe et lag længere op, altså præsentationslaget.
+Dette lag er også stærkt anvendeligt at bevæge sig i, såfremt de to servere skulle anvende forskelligt
+tegnsæt. 
+
+Da der er tale om ret væsentlige og personfølsomme data til udveksling, vil jeg benytte mig af TCP,
+da denne protokoltype anvender handshakes, hvilket vil sige, at vi får respons på, at vores data
+er afsendt og modtaget.

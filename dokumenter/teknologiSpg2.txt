@@ -1,0 +1,18 @@
+Teknologispørgsmål 2: 
+
+Overordnet set skelner vi mellem to typer af firewalls: 
+Der er "hardware firewall", og der er "software firewall". 
+
+Hardware firewall findes typisk i routeren, hvor man kan konfigurere, hvilke porte der skal være åbne,
+og hvilke der skal være lukkede for datatrafik. Ved at lukke specifikke porte undgår man, at computeren
+bliver infiltreret med ”malicious code” (ondsindet data - snavs).  Der findes også "standalone" H.F. 
+
+Software firewall findes på computerens system - altså et program, der er installeret på operativsystemet. 
+Windows-computere har fx typisk som standard Windows Firewall. En software firewall kan lige som
+hardware firewall konfigureres af brugeren. For det meste er Windows Firewall udmærket til den
+gennemsnitlige bruger, men hvis man gør brug af pc’en på et mere teknisk niveau, kan W.F. komme i vejen. 
+
+Mit valg vil i dette tilfælde være en Hardware Firefall, måske endda standalone. Systemets sikkerhed kan
+ikke sidestilles med det almene behov, og vi har med meget personfølsomme data at gøre. 
+Vi har behov for kvalitet og at sikkerheden er i top. Desuden er det ikke engang sikkert, at de to
+servere har et styresystem, som egner sig til en software firewall. 

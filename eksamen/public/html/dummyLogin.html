@@ -1,0 +1,54 @@
+<!--
+    Dette HTML-dokument indeholder et dummy-login.
+    Bemærk: Alt er hardcoded dummy-data.
+-->
+
+<!-- HTML5 -->
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Bank | Log ind i systemet</title>
+    <!-- Meta Content -->
+    <meta name="description" content="Log ind for at fortsætte til systemet.">
+    <meta name="author" content="Daniel Lyck">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styling -->
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <h1>Log ind i systemet</h1>
+    <p>For logge ind i selve systemet, skal du først angive korrekt ID og kodeord herunder.</p>
+    <div class="formDiv">
+        <form name="login">
+            <label class="label">Dit ID</label>
+            <input class="inputField" type="number" placeholder="F.eks. 1" name="Uid" required><br>
+            <label class="label">Dit kodeord</label>
+            <input class="inputField" type="password" placeholder="F.eks. 123" name="kodeord" required><br>
+            <br>
+            <input class="submitBtn" type="button" onclick="check(this.form)" value="Log ind">
+        </form>
+        <a href="/"><button class="submitBtn" style="margin-left: 10px;">Gå til index-siden</button></a><br><br>
+    </div>
+    <div id="dynamicDataDiv">
+        <p><b>Fejlbesked:</b></p>
+        <p id="fejlbesked">Ingen fejl lige nu.</p>
+    </div>
+    <!-- Nedenstående script håndterer valideringen -->
+    <script>
+        // Funktion, der tjekker om værdien i input-felterne matcher det hardcodede pair
+        function check(form) {
+            if (form.Uid.value == "1" && form.kodeord.value == "123") {
+                document.getElementById("fejlbesked").innerHTML = "Logger ind...";
+                window.location.href = "../konti";
+            }
+            else if (form.Uid.value == "" || form.kodeord.value == "") {
+                document.getElementById("fejlbesked").innerHTML = "Du skal udfylde begge felter!";
+            }
+            else {
+                document.getElementById("fejlbesked").innerHTML = "ID og kodeord matcher ikke!";
+            }
+        }
+    </script>
+</body>
+</html>

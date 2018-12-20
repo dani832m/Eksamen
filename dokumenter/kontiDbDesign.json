@@ -1,0 +1,28 @@
+{
+    "konti": [
+        {
+            "Uid": 1,
+            "kodeord": "123",
+            "cpr": 22111992,
+            "fornavn": "Ole",
+            "efternavn": "Olsen",
+            "adresse": "Parkvej 1, 4700 Næstved",
+            "kontonummer": 12345678,
+            "kundeId": 1821,
+            "valuta": "Bitcoin",
+            "saldo": 100
+        },
+        {
+            "Uid": 2,
+            "kodeord": "321",
+            "cpr": 11061983,
+            "fornavn": "Hans",
+            "efternavn": "Hansen",
+            "adresse": "Ringstedgade 10, 4700 Næstved",
+            "kontonummer": 87654321,
+            "kundeId": 1829,
+            "valuta": "Ether",
+            "saldo": 200
+        }
+    ]
+}

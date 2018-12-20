@@ -1,0 +1,58 @@
+<h1>Tabel over alle registrerede konti i Crypto Bank</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Kodeord</th>
+        <th>CPR</th>
+        <th>Fornavn</th>
+        <th>Efternavn</th>
+        <th>Adresse</th>
+        <th>Kontonummer</th>
+        <th>Kunde-ID</th>
+        <th>Valuta</th>
+        <th>Saldo</th>
+        <th>Håndter konto</th>
+    </tr>
+    <!-- For-each-loop, der gennemløber objektet "konti" for diverse key/values -->
+    {{#each konti}}
+    <tr>
+        <td>{{Uid}}</td>
+        <td>{{kodeord}}</td>
+        <td>{{cpr}}</td>
+        <td>{{fornavn}}</td>
+        <td>{{efternavn}}</td>
+        <td>{{adresse}}</td>
+        <td>{{kontonummer}}</td>
+        <td>{{kundeId}}</td>
+        <td>{{valuta}}</td>
+        <td>{{saldo}}</td>
+        <td height="30px" width="170px" style="text-align: center;">
+            <span class="ventTekst" style="display: none;"><em>Vent venligst...</em></span>
+            <form action="/konti/json/{{Uid}}" method="GET" style="display: inline;">
+                <input type="submit" value="Vis JSON" class="tableBtn">
+            </form>
+            <form action="/konti/delete/{{Uid}}" method="POST" style="display: inline;">
+                <input type="submit" value="Slet" class="tableBtn">
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>
+<br>
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="/">Gå til index-siden</a>.</li>
+        <li><a href="/html/opretNyBruger.html">Opret ny bruger i systemet</a>.</li>
+        <li><a href="/html/redigerData.html">Rediger data for konto/bruger i systemet</a>.</li>
+    </ul>
+</nav>
+<!-- Lille jQuery-script, der beder brugeren vente, efter der klikkes på en knap i tabellen -->
+<script>
+    $(document).ready(function() {
+        $('.tableBtn').click(function() {
+            $('.tableBtn').hide(); // Skjuler knapperne
+            $('.ventTekst').show(); // Viser tekst
+        });
+    });
+</script>

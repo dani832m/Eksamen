@@ -1,0 +1,25 @@
+<h1>Tabel over alle transaktioner i Crypto Bank</h1>
+<table>
+    <tr>
+        <th>Transaktions ID</th>
+        <th>Fra konto</th>
+        <th>Til konto</th>
+        <th>Gebyr</th>
+    </tr>
+    <!-- For-each-loop, der gennemløber objektet "transaktioner" for diverse key/values -->
+    {{#each transaktioner}}
+    <tr>
+        <td>{{transId}}</td>
+        <td>{{fraKonto}}</td>
+        <td>{{tilKonto}}</td>
+        <td>{{gebyr}}</td>
+    </tr>
+    {{/each}}
+</table>
+<br>
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="/">Gå til index-siden</a>.</li>
+    </ul>
+</nav>
