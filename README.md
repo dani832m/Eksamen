@@ -1,4 +1,4 @@
-# Prøveeksamen i programmering og teknologi
+# Eksamen i programmering og teknologi
 Dette repository indeholder min samlede besvarelse af eksamensopgaven, stillet i fagene *"Programmering"* og *"Teknologi"* på datamatikeruddannelsens 3. semester.
 
 * **Afviklet:** d. 20/12-2018.
