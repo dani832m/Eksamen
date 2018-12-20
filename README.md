@@ -1,5 +1,5 @@
 # Prøveeksamen i programmering og teknologi
-Denne zip-fil indeholder min samlede besvarelse af eksamensopgaven, stillet i fagene *"Programmering"* og *"Teknologi"* på datamatikeruddannelsens 3. semester.
+Dette repository indeholder min samlede besvarelse af eksamensopgaven, stillet i fagene *"Programmering"* og *"Teknologi"* på datamatikeruddannelsens 3. semester.
 
 * **Afviklet:** d. 20/12-2018.
 * **Sted:** [EASJ](https://www.easj.dk/ "EASJ's Hjemmeside"), Næstved.
@@ -15,7 +15,6 @@ Denne zip-fil indeholder min samlede besvarelse af eksamensopgaven, stillet i fa
 * Guide til opsætning af min database ligger i filen *"databaseNoter.txt*.
 * Jeg anvender GUI *Robo 3T* til at håndtere min lokale connection til *MongoDB*, der dermed er mit databasevalg.
 * På *localhost:3000* vises en oversigt over mulige endpoints og URL'er i systemet.
-* Link til repository med opgaven på GitHub: https://github.com/dani832m/Eksamen
 
 ### Let's go!
 ![alt text](https://media.giphy.com/media/IPbS5R4fSUl5S/giphy.gif)
